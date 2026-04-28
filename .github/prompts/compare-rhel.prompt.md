@@ -83,11 +83,11 @@ RHEL9 と RHEL10 の解析済み設計書を比較し、変更点と影響度を
 
 ### ステップ3: 比較結果の保存
 
-出力先: `./output/comparison/`
+出力先: `.github/data/outputs/comparison/`
 
 各ペアについて以下を保存する:
 
-**比較結果 Markdown**: `./output/comparison/{type}-comparison.md`
+**比較結果 Markdown**: `.github/data/outputs/comparison/{type}-comparison.md`
 
 ```markdown
 ---
@@ -116,7 +116,7 @@ createdAt: <ISO8601>
 <AI の比較出力>
 ```
 
-**レビューポイント一覧**: `./output/comparison/{type}-review-points.md`
+**レビューポイント一覧**: `.github/data/outputs/comparison/{type}-review-points.md`
 
 ```markdown
 # レビューポイント: 標準設計書（影響度：高）
@@ -143,7 +143,7 @@ createdAt: <ISO8601>
   ⚠️  detail-apache.md
      新バージョン対応ファイルがありません。新規作成が必要です。
 
-出力先: ./output/comparison/
+出力先: .github/data/outputs/comparison/
 
 次のステップ:
   レビュー実施  → #file:.github/prompts/review-design.prompt.md を使ってレビューして
